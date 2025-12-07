@@ -1,24 +1,20 @@
 package my_kds_project;
 
-
-
-
 network KDSNetwork
 {
     parameters:
-        int numNodes;
-        double areaX;
-        double areaY;
-        double txRange;
-        int k;
+        int numNodes = default(10); // Varsayılan değer ekledim
+        double areaX = default(500);
+        double areaY = default(500);
+        double txRange = default(100);
+        int k = default(2);
     submodules:
         host[numNodes]: MyKDSApp {
             parameters:
-                txRange = default(200);
-                k = default(2);
+                txRange = parent.txRange; // Network parametresini al
+                k = parent.k;
+                // x ve y burada rastgele atanabilir veya C++ içinde halledilir
+                @display("p=,,m,5,5,5"); // İkon yerleşimi
         }
-    connections allowunconnected:
-        for i=0..numNodes-2 {
-            host[i].out --> host[i+1].in;
-        }
+        // connections bloğu SİLİNDİ. Ad Hoc ağlarda sendDirect kullanılır.
 }

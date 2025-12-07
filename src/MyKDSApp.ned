@@ -6,9 +6,9 @@ simple MyKDSApp
         double txRange;
         int k;
         double helloInterval;
-        double x = default(0);
-        double y = default(0);
+        double x @mutable = default(0); 
+        double y @mutable = default(0);
     gates:
-        input in;
-        output out;
+        input in @directIn;
+        //output out;
 }

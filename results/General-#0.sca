@@ -1,0 +1,119 @@
+version 3
+run General-0-20251207-13:31:47-5707
+attr configname General
+attr datetime 20251207-13:31:47
+attr datetimef 20251207-133147
+attr experiment General
+attr inifile ../omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network my_kds_project.KDSNetwork
+attr processid 5707
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network my_kds_project.KDSNetwork
+config sim-time-limit 500s
+config mykds.KDSNetwork.numNodes 10
+config mykds.KDSNetwork.areaX 800
+config mykds.KDSNetwork.areaY 800
+config mykds.KDSNetwork.txRange 500
+config mykds.KDSNetwork.k 1
+config num-rngs 1
+config seed-set 0
+config repeat 10
+config *.txRange 500
+config *.k 1
+config *.helloInterval 1.0
+
+par KDSNetwork.host[0] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[0] txRange 500
+par KDSNetwork.host[0] k 1
+par KDSNetwork.host[0] helloInterval 1000
+par KDSNetwork.host[0] x 274.407
+attr mutable ""
+par KDSNetwork.host[0] y 296.422
+attr mutable ""
+par KDSNetwork.host[1] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[1] txRange 500
+par KDSNetwork.host[1] k 1
+par KDSNetwork.host[1] helloInterval 1000
+par KDSNetwork.host[1] x 422.133
+attr mutable ""
+par KDSNetwork.host[1] y 301.382
+attr mutable ""
+par KDSNetwork.host[2] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[2] txRange 500
+par KDSNetwork.host[2] k 1
+par KDSNetwork.host[2] helloInterval 1000
+par KDSNetwork.host[2] x 272.442
+attr mutable ""
+par KDSNetwork.host[2] y 423.626
+attr mutable ""
+par KDSNetwork.host[3] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[3] txRange 500
+par KDSNetwork.host[3] k 1
+par KDSNetwork.host[3] helloInterval 1000
+par KDSNetwork.host[3] x 311.782
+attr mutable ""
+par KDSNetwork.host[3] y 322.947
+attr mutable ""
+par KDSNetwork.host[4] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[4] txRange 500
+par KDSNetwork.host[4] k 1
+par KDSNetwork.host[4] helloInterval 1000
+par KDSNetwork.host[4] x 218.794
+attr mutable ""
+par KDSNetwork.host[4] y 148.767
+attr mutable ""
+par KDSNetwork.host[5] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[5] txRange 500
+par KDSNetwork.host[5] k 1
+par KDSNetwork.host[5] helloInterval 1000
+par KDSNetwork.host[5] x 28.3565
+attr mutable ""
+par KDSNetwork.host[5] y 481.831
+attr mutable ""
+par KDSNetwork.host[6] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[6] txRange 500
+par KDSNetwork.host[6] k 1
+par KDSNetwork.host[6] helloInterval 1000
+par KDSNetwork.host[6] x 191.721
+attr mutable ""
+par KDSNetwork.host[6] y 238.833
+attr mutable ""
+par KDSNetwork.host[7] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[7] txRange 500
+par KDSNetwork.host[7] k 1
+par KDSNetwork.host[7] helloInterval 1000
+par KDSNetwork.host[7] x 406.084
+attr mutable ""
+par KDSNetwork.host[7] y 264.447
+attr mutable ""
+par KDSNetwork.host[8] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[8] txRange 500
+par KDSNetwork.host[8] k 1
+par KDSNetwork.host[8] helloInterval 1000
+par KDSNetwork.host[8] x 284.022
+attr mutable ""
+par KDSNetwork.host[8] y 196.392
+attr mutable ""
+par KDSNetwork.host[9] typename "\"my_kds_project.MyKDSApp\""
+par KDSNetwork.host[9] txRange 500
+par KDSNetwork.host[9] k 1
+par KDSNetwork.host[9] helloInterval 1000
+par KDSNetwork.host[9] x 418.039
+attr mutable ""
+par KDSNetwork.host[9] y 35.518
+attr mutable ""
+par KDSNetwork typename "\"my_kds_project.KDSNetwork\""
+par KDSNetwork numNodes 10
+par KDSNetwork areaX 500
+par KDSNetwork areaY 500
+par KDSNetwork txRange 500
+par KDSNetwork k 1
+

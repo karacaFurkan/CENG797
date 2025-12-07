@@ -1,5 +1,5 @@
 #
-# OMNeT++/OMNEST Makefile for omnetpp-my-kds
+# OMNeT++/OMNEST Makefile for my-kds-project
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep
@@ -7,7 +7,7 @@
 
 # Name of target to be created (-o option)
 TARGET_DIR = .
-TARGET_NAME = omnetpp-my-kds$(D)
+TARGET_NAME = my-kds-project$(D)
 TARGET = $(TARGET_NAME)$(EXE_SUFFIX)
 TARGET_FILES = $(TARGET_DIR)/$(TARGET)
 
@@ -31,10 +31,11 @@ PROJECTRELATIVE_PATH = src
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS = $O/MyKDSApp.o
+OBJS = $O/MyKDSApp.o $O/MyKDS_m.o
 
 # Message files
-MSGFILES =
+MSGFILES = \
+    MyKDS.msg
 
 # SM files
 SMFILES =
